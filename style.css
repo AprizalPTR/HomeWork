@@ -1,0 +1,77 @@
+ /* Aturan CSS untuk perangkat mobile */
+ @media (max-width: 767px) {
+    /* Tambahkan aturan CSS untuk tampilan pada perangkat mobile di sini */
+  }
+  
+  /* Aturan CSS untuk perangkat tablet */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Tambahkan aturan CSS untuk tampilan pada perangkat tablet di sini */
+  }
+  
+  /* Aturan CSS untuk perangkat desktop */
+  @media (min-width: 992px) {
+    /* Tambahkan aturan CSS untuk tampilan pada perangkat desktop di sini */
+  }
+  body{
+    width: 100%;
+    min-height: 100vh;
+      background: url("16282276_rm222batch2-mind-03.jpg");
+      background-position: center;
+      background-size: cover;
+      justify-content: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  .sidebar li .submenu{ 
+      list-style: none; 
+      margin: 0; 
+      padding: 0; 
+      padding-left: 1rem; 
+      padding-right: 1rem;
+  }
+  
+  #nav_top {
+  background-color: #008AD8;
+   transition: all 0.3s;
+  }
+  
+  #side_nav{
+   background: #008AD8;
+   min-width: 250px;
+   max-width: 250px;
+   transition: all 0.3s;
+  }
+  .content{
+     min-height: 100vh;
+     width: 100%;
+  }
+  hr.h-color{
+    background: #000;
+  }
+  
+  .sidebar li.active{
+     background: #eee;
+     border-radius: 8px;
+  }
+  
+  .sidebar li.active a, .sidebar li.active a:hover {
+   color: #000;
+  }
+  .sidebar li a{
+   color: #fff;
+  }
+  
+  @media(max-width: 767px){
+   #side_nav{
+     margin-left: -250px;
+     position: absolute;
+     min-height: 100vh;
+     z-index: 1;
+  
+   }
+   #side_nav.active{
+     margin-left: 0;
+    }
+  }
